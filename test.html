@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>Basic</title>
+    <!-- <meta name="description" content="Animating various properties of various objects"></meta> -->
+    <!-- <meta property="og:image" content="https://raw.githubusercontent.com/ngokevin/kframe/master/components/animation/examples/basic/preview.gif"></meta> -->
+    <script src="https://rawgit.com/aframevr/aframe/6019885/dist/aframe-master.min.js"></script>
+    <script src="https://rawgit.com/ngokevin/kframe/master/components/animation/dist/aframe-animation-component.min.js"></script>
+    <!-- <script src="https://unpkg.com/aframe-template-component@3.2.1/dist/aframe-template-component.min.js"></script> -->
+  </head>
+  <body>
+      <a-scene>
+        <a-entity geometry="primitive: box" material="color: black"
+                  animation__color="property: material.color; dir: alternate; dur: 1000;
+                                    easing: easeInSine; loop: true; to: #FFF">
+        </a-entity>
+    
+        <a-entity geometry="primitive: box" material="color: orange"
+                  animation__fadein="property: material.opacity; dur: 100;
+                                      easing: linear; from 0; to: 1; startEvents: fadein"
+                  animation__fadeout="property: material.opacity; dur: 100;
+                                      easing: linear; from 1; to: 0; startEvents: fadeout">
+        </a-entity>
+    
+        <a-cylinder color="#F55" radius="0.1"
+                    animation="property: color; dir: alternate; dur: 1000;
+                               easing: easeInSine; loop: true; to: #5F5"
+                    animation__scale="property: scale; dir: alternate; dur: 200;
+                               easing: easeInSine; loop: true; to: 1.2 1 1.2"
+                    animation__yoyo="property: position; dir: alternate; dur: 1000;
+                                     easing: easeInSine; loop: true; to: 0 2 0">
+        </a-cylinder>
+    
+      </a-scene>
+    </body>
+</html>

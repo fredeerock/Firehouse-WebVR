@@ -1,15 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Hello, WebVR! - A-Frame</title>
-    <meta name="description" content="Hello, WebVR! - A-Frame">
+    <title>scapes</title>
     <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
     <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
-
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.dom.min.js"></script> -->
-    
-    <!-- <script src="https://rawgit.com/ngokevin/aframe/animationbugless/dist/aframe-master.min.js"></script> -->
     <script src="https://rawgit.com/ngokevin/kframe/master/components/animation/dist/aframe-animation-component.min.js"></script>
     
     <script>
@@ -20,14 +14,34 @@
   </head>
   <body>
     <a-scene>
-        <a-entity environment="seed: 17; skyType: gradient; skyColor: #14645f; horizonColor: #a3dab8; lighting: point; fog: 0.73; ground: noise; groundYScale: 0.81; groundColor: #ae3241; groundColor2: #db4453; dressing: mushrooms; dressingAmount: 150; dressingColor: #a9313d; grid: dots; gridColor: #239893">
-            <a-animation attribute="environment.groundYScale" 
+        
+      <a-entity 
+            environment="preset: threetowers; active: true; seed: 5; skyType: gradient; skyColor: black; horizonColor: blue; fog: 0.8; ground: spikes; groundYScale: 4.26; groundTexture: walkernoise; groundColor: #273a49; groundColor2: #2b464f; dressing: towers; dressingAmount: 3; dressingColor: #5f6d94; dressingScale: 50; gridColor: #239893"
+        >
+          <!-- <a-animation attribute="environment.groundYScale" 
               to="20" 
-              dur="1000"
+              dur="10000"
+              direction= "alternate"
+              repeat= "indefinite";
+              >
+            </a-animation> -->
+
+          <a-animation attribute="environment.horizonColor" 
+              from= "blue"
+              to="red" 
+              dur="5000"
               direction= "alternate"
               repeat= "indefinite";
               >
             </a-animation>
+
+            <a-animation attribute="environment.dressingScale" 
+            to="20" 
+            dur="10000"
+            direction= "alternate"
+            repeat= "indefinite";
+            >
+          </a-animation>
         </a-entity>
 
         
