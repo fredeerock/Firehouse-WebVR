@@ -16,15 +16,16 @@
     <a-scene>
         
       <a-entity 
-      environment="preset: arches; active: true; seed: 19; skyType: atmosphere; skyColor: #8cbdc8; horizonColor: #ddd; fog: 0.67; flatShading: true; ground: canyon; groundYScale: 10; groundTexture: walkernoise; groundColor: #a87d6f; groundColor2: #795449; dressing: arches; dressingAmount: 6; dressingScale: 26; dressingOnPlayArea: 0.04"
+      environment="horizonColor: #ddb800; skyColor: #c81100; active: true; seed: 19; skyType: gradient; fog: 0.67; flatShading: true; ground: canyon; groundYScale: 10; groundTexture: walkernoise; groundColor: #a87d6f; groundColor2: #795449; dressing: arches; dressingAmount: 6; dressingScale: 26; dressingOnPlayArea: 0.04; preset: arches"
       >
-          <!-- <a-animation attribute="environment.groundYScale" 
-              to="20" 
+          <a-animation attribute="environment.skyColor" 
+              from= "orange"
+              to="black" 
               dur="10000"
               direction= "alternate"
               repeat= "indefinite";
               >
-            </a-animation> -->
+            </a-animation>
 
           <a-animation attribute="environment.horizonColor" 
               from= "pink"
