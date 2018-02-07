@@ -16,8 +16,8 @@
     <a-scene>
         
       <a-entity 
-            environment="preset: threetowers; active: true; seed: 5; skyType: gradient; skyColor: black; horizonColor: blue; fog: 0.8; ground: spikes; groundYScale: 4.26; groundTexture: walkernoise; groundColor: #273a49; groundColor2: #2b464f; dressing: towers; dressingAmount: 3; dressingColor: #5f6d94; dressingScale: 50; gridColor: #239893"
-        >
+      environment="preset: arches; active: true; seed: 19; skyType: atmosphere; skyColor: #8cbdc8; horizonColor: #ddd; fog: 0.67; flatShading: true; ground: canyon; groundYScale: 10; groundTexture: walkernoise; groundColor: #a87d6f; groundColor2: #795449; dressing: arches; dressingAmount: 6; dressingScale: 26; dressingOnPlayArea: 0.04"
+      >
           <!-- <a-animation attribute="environment.groundYScale" 
               to="20" 
               dur="10000"
@@ -27,17 +27,17 @@
             </a-animation> -->
 
           <a-animation attribute="environment.horizonColor" 
-              from= "blue"
-              to="red" 
-              dur="5000"
+              from= "pink"
+              to="blue" 
+              dur="40000"
               direction= "alternate"
               repeat= "indefinite";
               >
             </a-animation>
 
             <a-animation attribute="environment.dressingScale" 
-            to="20" 
-            dur="10000"
+            to="5" 
+            dur="50000"
             direction= "alternate"
             repeat= "indefinite";
             >
