@@ -16,19 +16,28 @@
     <a-scene>
         
       <a-entity 
-            environment="preset: threetowers; active: true; seed: 5; skyType: gradient; skyColor: black; horizonColor: blue; fog: 0.8; ground: spikes; groundYScale: 4.26; groundTexture: walkernoise; groundColor: #273a49; groundColor2: #2b464f; dressing: towers; dressingAmount: 3; dressingColor: #5f6d94; dressingScale: 50; gridColor: #239893"
+      environment="preset: goldmine; active: true; seed: 53; skyType: gradient; skyColor: #1e1c1a; horizonColor: #8c7964; lighting: point; fog: 0.43; flatShading: true; playArea: 1.08; ground: canyon; groundYScale: 50; groundColor: #353535; groundColor2: #454545; dressing: hexagons; dressingAmount: 300; dressingColor: #fe921b; dressingScale: 0.5; dressingOnPlayArea: 0.03"
         >
-          <!-- <a-animation attribute="environment.groundYScale" 
+          <a-animation attribute="environment.groundYScale" 
               to="20" 
               dur="10000"
               direction= "alternate"
               repeat= "indefinite";
               >
-            </a-animation> -->
+            </a-animation>
+
+            <a-animation attribute="environment.groundColor" 
+            from= "grey"
+            to="pink" 
+            dur="5000"
+            direction= "alternate"
+            repeat= "indefinite";
+            >
+          </a-animation>
 
           <a-animation attribute="environment.horizonColor" 
-              from= "blue"
-              to="red" 
+              from= "black"
+              to="green" 
               dur="5000"
               direction= "alternate"
               repeat= "indefinite";
@@ -37,7 +46,7 @@
 
             <a-animation attribute="environment.dressingScale" 
             to="20" 
-            dur="10000"
+            dur="100000"
             direction= "alternate"
             repeat= "indefinite";
             >
