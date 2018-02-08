@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+      <META HTTP-EQUIV="refresh" CONTENT="120">
     <title>scapes</title>
     <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
     <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
@@ -18,6 +19,15 @@
       <a-entity 
       environment="horizonColor: #ddb800; skyColor: #c81100; active: true; seed: 19; skyType: gradient; fog: 0.67; flatShading: true; ground: canyon; groundYScale: 10; groundTexture: walkernoise; groundColor: #a87d6f; groundColor2: #795449; dressing: arches; dressingAmount: 6; dressingScale: 26; dressingOnPlayArea: 0.04; preset: arches"
       >
+          <!-- <a-animation attribute="environment.groundColor" 
+          from= "blue"
+          to="yellow" 
+          dur="20000"
+          direction= "alternate"
+          repeat= "indefinite";
+          >
+        </a-animation> -->
+
           <a-animation attribute="environment.skyColor" 
               from= "orange"
               to="black" 
